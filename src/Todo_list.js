@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './Todo.css';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import Card from "react-bootstrap/Card";
 
 const Todo_list = () => {
     const [inputData, setInputData] = useState({name: "", task: ""});
@@ -74,24 +75,27 @@ const Todo_list = () => {
              {/* <button title = "Add-item" onClick = {addItem}>add Item</button> */}
              
              <div className = "rcorners1">
-            
+    
                 {
                     items.map((elem,ind) => {
                         return (
                             <>
-                            <div key = {ind} className = "small">
-                                <div className = "marge">
-                                    <h3>Name = {elem.name}</h3>
-                                    <h3>Task = {elem.task}</h3>
-                                    {/* <h3>ID = {ind}</h3> */}
-                                    <button title = "delete-item" className = "del-btn" onClick = {() => deleteItem(ind) }> Delete </button>
-                                    <button title = "Update-item" className = "upd-btn" onClick = {() => editItem(ind) }> Update </button>
+                            
+                            <Card className = "small">{
+                                <div key = {ind} className = "small" >
+                                    <div className = "marge">
+                                        <h3>Name = {elem.name}</h3>
+                                        <h3>Task = {elem.task}</h3>
+                                        {/* <h3>ID = {ind}</h3> */}
+                                        <button title = "delete-item" className = "del-btn" onClick = {() => deleteItem(ind) }> Delete </button>
+                                        <button title = "Update-item" className = "upd-btn" onClick = {() => editItem(ind) }> Update </button>
+                                    </div>
                                 </div>
-                            </div>
+                                }</Card>
+                            
                             </>
                         )
-                    })
-                    
+                    })  
                 }
                 <button title = "delete-item" className = "del-btn" onClick = {delAll }> Delete All</button>
              </div>
@@ -103,3 +107,4 @@ const Todo_list = () => {
 }
 
 export default Todo_list
+
