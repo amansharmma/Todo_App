@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+  }
+   
+  body {
+    background-image: url("https://cdn.shopify.com/s/files/1/1162/8728/articles/Blog_Post_1400x.progressive.JPG?v=1534952335");
+    overflow: auto;
+    /* margin: auto; */
+  }
+  .rcorners1{
+    margin: 20px;
+  } 
+.marge{
+    margin: 20px;
+}
+
+  .small {
+    border-radius: 25px;
+    background: #41ddc3;
+    /* margin-top: 3000px; */
+    /* margin: 20px; */
+    margin: auto;
+    /* padding: 200px; */
+    width: 900px; 
+    /* height: 1000px;  */
+  }
+
+  input {
+      border-radius: 25px;
+      text-align: center;
+  }
+  h1{
+     text-align: center;
+     margin: 5%;
+     font-size: 3rem;
+     text-decoration: underline;
+  }
+   .inp{
+    margin-top: px;
+   }
+  .rock{
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .del-btn,.upd-btn{
+    margin-right: 10px;
+
+  }
+  .upd-btn{
+      background-color: orange;
+  }
+  .del-btn{
+      background-color: red;
+  }
+  button{
+    background-color: green;
+    padding: 0px 50px ;
+    text-align: center;
+    border-radius: 12px;
+    /* margin-top: 5000px; */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+ 
+
+
+
+  
