@@ -81,7 +81,7 @@ const Todo_list = () => {
                         return (
                             <>
                             
-                            <Card className = "small">{
+                            <Card className = "small_card">{
                                 <div key = {ind} className = "small" >
                                     <div className = "marge">
                                         <h3>Name = {elem.name}</h3>
